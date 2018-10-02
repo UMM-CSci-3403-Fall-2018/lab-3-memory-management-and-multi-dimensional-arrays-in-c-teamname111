@@ -36,6 +36,8 @@ int* array_merge(int num_arrays, int* sizes, int** values){
 	result[0] = found_values [0];
 	for(int i = 1; i <= found_values[0]; i++){
 		result[i] = tempArray[i];
-		}       
+		}
+ 	free(found_values);
+	free(tempArray);	
 	return result;
 }
